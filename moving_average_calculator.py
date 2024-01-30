@@ -29,9 +29,6 @@ def moving_average(events: List[dict], window_size: int) -> List[dict]:
 
     Example:
     - moving_average(events, window_size)
-
-    Raises:
-    - IndexError: If the 'events' list is empty.
     """
 
     # Return empty array if events list is empty
