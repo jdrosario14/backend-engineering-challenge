@@ -133,7 +133,6 @@ class TestUnbabelCli(unittest.TestCase):
         with open("outputs/unbabel_events_10.json", "r", encoding="utf-8") as json_file:
             result_data = json.load(json_file)
 
-        # Assuming you have an expected result for the JSON content
         expected_result = [
             {"date": "2018-12-26 18:11:00", "average_delivery_time": 0},
             {"date": "2018-12-26 18:12:00", "average_delivery_time": 20.0},
