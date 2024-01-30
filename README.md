@@ -8,7 +8,9 @@ This is a project for the Unbabel Backend Engineering Challenge and the goal of 
 ## Run
 To run the program use the following command: 
 
-```python3 unbabel_cli.py --input_file <file.json> --window_size <window size>```
+```
+python3 unbabel_cli.py --input_file <file.json> --window_size <window size>
+```
 
 **Input**:
 + ```input_file```: The path to the input JSON file containing the translation events.
@@ -16,14 +18,17 @@ To run the program use the following command:
 
 There are already some examples of input files to be used as arguments. These files can be found in the following path: ```tests/fixtures```. For instance, to use the example provided in the challenge description you can run the following command:
 
-```python3 unbabel_cli.py --input_file tests/fixtures/unbabel_events.json --window_size 10```
+```
+python3 unbabel_cli.py --input_file tests/fixtures/unbabel_events.json --window_size 10
+```
 
 **Output**:
+
 The program will create a JSON file with the final response and this file can be found in the ```outputs``` folder. The file name will be a concatenation between the name of the input file and the window_size value passed as arguments. So for the example above the program will generate a file called ```unbabel_events_10.json``` inside the ```outputs``` folder.
 
 ## Tests
 There are two test files:
-+ ```test_unbabel_cli.py`` - Unit tests for utility functions in the unbabel_cli module and the entire flow of the program.
++ ```test_unbabel_cli.py``` - Unit tests for utility functions in the unbabel_cli module and the entire flow of the program.
 + ```test_moving_average_calculator.py``` - Unit tests for the moving_average function in the moving_average_calculator module. 
 
 To run the tests use the following commands:
